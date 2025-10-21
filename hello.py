@@ -272,7 +272,7 @@ print(h.translate())
 """
 
 # BOOLEAN IN PYTHON ;
-print(20 > 21)
+"""print(20 > 21)
 print(1 == 1.0)
 
 a = 20
@@ -286,3 +286,120 @@ else:
 
 print(bool("helo"))
 print(bool(12))
+"""
+
+# PYTHON OPERATORS :
+
+"""
+python arithematic operator includes the following :
+-> addition
+-> subtraction
+->multiplication
+->Division
+->Modulus
+->exponentiation
+->Floor division"""#(return an inetger)
+
+"""x =15
+y = 2
+print(x + y)
+print(x - y)
+print(x * y)
+print(x / y)
+print(x % y)
+print(x // y)
+print(x ** y)"""
+
+# ASSIGNMENT OPERATOR IN PYTHON :
+# -> assignment operators are used to assign value to the variables 
+"""
+
+=
++=
+-=
+*=
+/=
+%=
+//=
+**=
+&=
+|=
+^=
+>>=
+<<=
+:= (Walrus operator)
+"""
+
+
+# walrus operator 
+#-> it is used to assign an expressin to a variable 
+
+#like 
+
+number = [1,2,3,4,5]
+count = len(number)
+
+if(count > 2):
+    print(f'there number of elements are {count}')
+
+if(count := len(number)) > 2 :
+    print(f'the number of elements are {count}')
+
+
+#COMPARISON OPERATOR :
+
+"""
+
+==
+!=
+>
+<
+>=
+<=
+"""
+#chaining comparison :
+"""x = 5
+
+print(1 < x < 10)
+
+print(1 < x and x < 10)"""
+
+#LOGICAL OPERATORS IN PYTHON :
+#-> logical operators are used to combine conditional statements
+"""
+-> and 
+->or
+->not
+"""
+
+"""x = 5 
+if(x > 0 and x < 10):
+    print(' x lies between 1 -10')
+
+print(x < 5 or x > 10)
+
+print(not(x > 3 and x < 10))"""
+
+# IDENTITY OPERATOR IN PYTHON :
+
+#-> is -> returns true if both the variable are the same object 
+#-> isnot ->returns true if both varibles are not the same 
+
+"""x = ["apple" , "bannana"]
+y = ["orange" , "plum"]
+z= x
+
+print(x is z)
+print(x == z)
+print(x is not y)"""
+
+#MEMBERSHIP OPERATOR IN PYTHON :
+
+# in ->
+# not in ->
+
+fruits = ["apple" , "banana" ,"mango"]
+print("banana" in fruits)
+print("apple" not in fruits)
+
+
