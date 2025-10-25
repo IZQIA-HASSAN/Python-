@@ -336,7 +336,7 @@ print(x ** y)"""
 
 #like 
 
-number = [1,2,3,4,5]
+"""number = [1,2,3,4,5]
 count = len(number)
 
 if(count > 2):
@@ -345,7 +345,7 @@ if(count > 2):
 if(count := len(number)) > 2 :
     print(f'the number of elements are {count}')
 
-
+"""
 #COMPARISON OPERATOR :
 
 """
@@ -397,9 +397,113 @@ print(x is not y)"""
 
 # in ->
 # not in ->
-
+"""
 fruits = ["apple" , "banana" ,"mango"]
 print("banana" in fruits)
 print("apple" not in fruits)
+"""
 
+# BITWISE OPERATOR IN PYTHON :
+# Bitwise operator in python are used to compare (binary) numbers ;
 
+"""
+& -> AND 
+| -> OR
+^ -> XOR
+~ -> NOT
+<< -> zero fill left shift
+>> -> signed right shift
+
+"""
+
+# LIST IN PYTHON :
+#list are used to store multiple items in a single variable .
+
+"""mylist = ["apple" , "banana","cherry"]
+print(len(mylist))
+
+list2 = ["abc" , "123" , True, "male"]
+print(list2)
+print(type(list2))
+
+thislist = list(("apple","catchy","merger","almond","walnut","pistachio"))
+print(thislist)
+print(thislist[0:3])
+print(thislist[0:])
+
+if "pistachio" in thislist:
+    print("yes , available")
+
+thislist[1] = "machine" 
+print(thislist)
+
+thislist = ["shiekh" , "non-shiekh" ,"clean-shiekh","pure-shiekh","mutant-shiekh"]
+thislist[1:3] = ["non-pta" , "non-pta"]
+print(thislist)
+thislist[1:2] = ["ahmed" , "muhammad"]
+print(thislist)
+thislist[1:3] = ["watermelon"]
+print(thislist)
+"""
+#->insert() , this method is used to insert any value at the specified location .
+
+list = ['one' , 'two' , 'three']
+list.insert(2,"two.two")
+#print(list)
+
+#-> we can also add items at any wanted location , like we can specify the index where we want to add the item .
+
+list.insert(0 , "zero")
+#print(list)
+
+#-> to add an item at the end of the list we will use append() method
+
+list.append("four")
+#print(list)
+
+#-> to append items from another list to the list use extend() method to do so , 
+
+list1 = ["ali ", "ahmed" ,"raza"]
+list2 = ["animal" , "bird" ,"saregamapa"]
+list2.extend(list1)
+#print(list2)
+
+#-> we can add extend tuples ,dictionaries , sets etc ;
+
+list3 = {"set" , "null" ,"super"}
+list2.extend(list3)
+#print(list2)
+
+#-> removing list item : use remove() method to do so ,
+
+list4 = ["laptop","pc","macos","android","laptop"]
+#list4.remove("pc")
+#print(list4)
+
+#-> if there are two similar elements then the first occurence will be removed .
+
+#list4.remove("laptop")
+#print(list4)
+
+#-> the pop ,ethos removes the specified index items 
+
+#list4.pop(2)
+#print(list4)
+
+#-> if item is not specified the last item will be removed automatically 
+
+#-> del keyword is also used to remove or delete the items.
+
+"""del list4[0]
+print(list4)
+"""
+listing = ["one" ,'two',"three"]
+del listing #this delete the list now the list nomore exist.
+
+#-> clear() method clears the list , the list still exist but there are no items in it .
+
+my_list = ["1" ,"2",'3']
+my_list.clear()
+print(my_list)
+
+#-> today enough start from looping throug list .
