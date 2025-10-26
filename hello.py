@@ -446,7 +446,7 @@ thislist[1:3] = ["watermelon"]
 print(thislist)
 """
 #->insert() , this method is used to insert any value at the specified location .
-
+"""
 list = ['one' , 'two' , 'three']
 list.insert(2,"two.two")
 #print(list)
@@ -494,9 +494,9 @@ list4 = ["laptop","pc","macos","android","laptop"]
 
 #-> del keyword is also used to remove or delete the items.
 
-"""del list4[0]
+del list4[0]
 print(list4)
-"""
+
 listing = ["one" ,'two',"three"]
 del listing #this delete the list now the list nomore exist.
 
@@ -505,5 +505,126 @@ del listing #this delete the list now the list nomore exist.
 my_list = ["1" ,"2",'3']
 my_list.clear()
 print(my_list)
+"""
 
 #-> today enough start from looping throug list .
+
+#-> looping through list 
+
+"""list = ["apple","orange","pine"]
+for x in  list:
+    print(x)
+
+for i in range(len(list)):
+    print(list[i])
+
+i = 0
+while i < len(list):
+    print(list[i])
+    i = i + 1
+
+#-> comprehension methos to loop through list;
+
+this_list = ["1" ,"2" ,"3","4"]
+[print(x) for x in this_list]
+
+#-> list comprehension :
+
+# for example if w want to make a new list having items form another list starting from a specific alphabet we can do it by using following wway.
+
+newlist = ["ahmed","asghar","ali","murtaza","shahab"]
+
+newlist2 =[]
+
+for x in newlist:
+    if "a" in x:
+        newlist2.append(x)
+
+print(newlist2)
+
+newlist2 = [x for x in newlist if x != "ali"]
+print(newlist2)
+
+newlist2 = [x for x in newlist]
+print(newlist2)
+
+newlist2 = [x.upper() for x in list]
+print(newlist2
+"""
+
+# -> sorting in lists 
+
+"""thislist = ["pummpy" ,"yumpy","yumpkin","cuppycake"]
+thislist.sort()
+print(thislist)
+
+numerical = [100,200,100.5,232,545]
+numerical.sort()
+numerical.sort(reverse = True)
+print(numerical)
+
+#-> Sorting through functions ;
+
+def myfun(n):
+    return abs(n-100)
+
+mylist = [100,50,65,82,23]
+mylist.sort(key = myfun)
+print(mylist)
+
+#-> Case-sensitive sorting can give unexpected results : 
+
+ourlist = ["apple" , "orange" ,"Kiwi","plum"]
+ourlist.sort()
+print(ourlist)
+
+#-> if you want case-insensitive sorting , tehn use str.lower as a key function :
+
+listing = ["banana","apple","pine-apple"]
+listing.sort(key = str.lower)
+print(listing) 
+listing.reverse()
+print(listing)
+
+"""
+
+#-> copy list 
+
+
+thislist = ["bmw","ferrari","legender","bugati","g-wagon"]
+mylist = thislist.copy()
+print(mylist)
+print(thislist)
+
+#-> we can also use list() to make a copy of a list 
+
+mylist2 = list(thislist)
+print(mylist2)
+
+# -> we can also make copy by using slice operator 
+"""
+mylist3 = thislist[:]
+print(mylist3)"""
+
+#-> joining two list ;
+
+alpha = [1,2,3,4]
+gamma = [5,6,7,8]
+"""
+list3 = gamma + alpha
+print(list3)
+"""
+
+# another way 
+
+list1 = [1,2,3,4]
+list2 = [5,6,7,8]
+
+"""for x in list1:
+    list2.append(x)
+
+print(list2)
+"""
+
+list1.extend(list2)
+print(list1)
