@@ -628,3 +628,164 @@ print(list2)
 
 list1.extend(list2)
 print(list1)
+
+#-> list methods in python :
+
+
+#-> listing some important methods in python ;
+"""
+
+append()
+clear()
+copy()
+count()
+extend()
+index()
+insert()
+pop()
+remove()
+reverse()
+sort()
+
+"""
+
+
+
+# TUPLES IN PYTHON :
+# tuples are used to store multiple items in a single variable .
+# it is ordered and unchangeable 
+
+
+#.. we will be continuning tuple etc after loops and functions 
+
+
+
+
+
+
+
+# -> python conditions ans if statements 
+
+a = 23 
+b = 45
+if a < b :
+    print("23 is greater than b ")
+    print("python is gorgeous")
+    print("ultimately , python will bw your first love !")
+
+
+is_logged_in = False
+if is_logged_in:
+    print("nothing will be printed when your variable is set as false ")
+
+
+
+x = 90 
+y = 90
+
+if x > y:
+    print('x is greater')
+elif x == y:
+    print("both are exact ")
+
+
+marks = 70
+
+if marks == 70:
+    print("Grade B")
+elif marks > 70:
+    print("Grade B+")
+elif marks > 80:
+    print("Grade A")
+elif marks > 85:
+    print("Grade A+")
+
+username = "izqia"
+
+if len(username) > 2:
+    print(f"welcome {username} can be entered")
+else:
+    print("Error : user name is not of proper length ")
+
+
+# the use of ternary operator :
+
+my = 3
+your = 4
+
+print("my") if my > your else print("your")
+
+# nested if  ,  the code evalutes from outer most condition to inward :
+
+age = 18
+has_liscence = True
+
+if age >= 18:
+    if has_liscence:
+        print("can drive")
+    else:
+        print("you need a liscence")
+else:
+    print("you are too young to drive ")
+
+
+
+# pass statements in python 
+"""
+Why Use pass?
+The pass statement is useful in several situations:
+
+When you're creating code structure but haven't implemented the logic yet
+When a statement is required syntactically but no action is needed
+As a placeholder for future code during development
+In empty functions or classes that you plan to implement later
+
+
+
+pass vs Comments
+A comment is ignored by Python, but pass is an actual statement that gets executed (though it does nothing). 
+You need pass where Python expects a statement, not just a comment.
+
+"""
+
+
+score = 85
+
+if score > 90:
+  pass 
+print("Score processed")
+
+
+value = 50
+
+if value < 0:
+  print("Negative value")
+elif value == 0:
+  pass # Zero case - no action needed
+else:
+  print("Positive value")
+
+
+
+# -> LOOPING IN PYTHON :
+
+# While loop
+
+i =1 
+while i <= 10:
+    print(i)
+    i+=1
+else:
+    print("now i will not be printed , beacuse i is no longer greater than 10 ")
+
+# xe = 1
+# while xe < 6:
+#     print(xe)
+#     if xe == 5:
+#         break
+#     xe+=1
+
+
+
+
+
